@@ -21,9 +21,7 @@ public class TestMongoConn {
 
 	@Test
 	public void testMongo() {
-		log.info( "test start" );
-		
-		 String connectionString = "mongodb+srv://test_user:MongoClient_2023@fj-test.x5reacv.mongodb.net/?retryWrites=true&w=majority";
+		 String connectionString = "";
 	        ServerApi serverApi = ServerApi.builder()
 	                .version(ServerApiVersion.V1)
 	                .build();
@@ -46,8 +44,6 @@ public class TestMongoConn {
 	               fail( message );
 	            }
 	        }
-		
-		log.info( "test end" );
 	}
 	
 }
